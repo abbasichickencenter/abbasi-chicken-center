@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Abbasi Chicken Center</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e8f5e9;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+/* Chicken Picture Background */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("chicken.png") center center / cover no-repeat;
+    opacity: 0.50;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Header */
+header {
+    background: #0b3d2e;
+    color: white;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 22px;
+}
+
+/* Main */
+.hero {
+    padding: 40px 15px;
+}
+
+.hero h2 {
+    color: navy;
+    font-size: 34px;
+    margin: 25px 0 10px;
+}
+
+.welcome {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px auto 25px;
+}
+
+/* Menu */
+.section {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 25px 15px;
+}
+
+.section h2 {
+    font-size: 34px;
+    color: #0b3d2e;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.item {
+    background: rgba(255,255,255,0.90);
+    padding: 18px 10px;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.20);
+}
+
+/* Special Offer */
+.offer {
+    background: #fff3cd;
+    border: 2px solid #d39e00;
+    border-radius: 15px;
+    padding: 22px 15px;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Contact */
+.contact {
+    background: #0b3d2e;
+    color: white;
+    padding: 30px 15px;
+    margin-top: 30px;
+}
+
+.contact h2 {
+    color: white;
+    font-size: 34px;
+}
+
+.contact p {
+    font-size: 23px;
+    margin: 12px 0;
+}
+
+/* WhatsApp */
+.whatsapp {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 25px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #06291f;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .welcome {
+        font-size: 24px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .item {
+        font-size: 21px;
+    }
+
+    .offer {
+        font-size: 21px;
+    }
+
+    .contact p {
+        font-size: 19px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>عباسی چکن سینٹر</h1>
+
+<p>Abbasi Chicken Center</p>
+
+</header>
+
+
+<section class="hero">
+
+<h2>Fresh Chicken Available</h2>
+
+<div class="welcome">
+Welcome to Abbasi Chicken Center
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>ہمارا مینو</h2>
+
+<div class="menu">
+
+<div class="item">چکن ثابت / کڑاہی</div>
+
+<div class="item">چکن بون لیس</div>
+
+<div class="item">چکن سینہ تکا</div>
+
+<div class="item">چکن سینہ بروَسٹ</div>
+
+<div class="item">گولڈن</div>
+
+<div class="item">چکن کلیجی</div>
+
+<div class="item">زندہ مرغی</div>
+
+<div class="item">پوٹا</div>
+
+<div class="item">گردن</div>
+
+</div>
+
+
+<div class="offer">
+
+شادی بیاہ اور دیگر تقریبات کے لیے خصوصی ڈسکاؤنٹ
+
+</div>
+
+</section>
+
+
+<section class="contact">
+
+<h2>رابطہ کریں</h2>
+
+<p>
+<strong>Contact Name:</strong> Saeed Abbasi
+</p>
+
+<p>
+<strong>📞 0311-7000077</strong>
+</p>
+
+<p>
+<strong>📍 Zikrya Chowk, 17-C, Shah Latif Town, Karachi</strong>
+</p>
+
+
+<a
+class="whatsapp"
+href="https://wa.me/923117000077"
+target="_blank">
+
+WhatsApp پر رابطہ کریں
+
+</a>
+
+</section>
+
+
+<footer>
+
+© 2026 Abbasi Chicken Center — All Rights Reserved
+
+</footer>
+
+</body>
+</html>
